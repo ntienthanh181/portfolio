@@ -1,0 +1,125 @@
+/* PC */
+@media (min-width: 992px){
+    .mobiletabletheader{
+        display: none;
+    }
+}
+
+/* Tablet & Mobile  */
+@media (max-width: 991.8px) {
+    html{
+        max-width: 100%;
+    }
+    .slidercover{
+        max-width: 100%;
+    }
+    .spaceadjust{
+        display: none;
+        justify-content: center;
+        min-width: none;
+    }
+    .morespace{
+        display: none;
+    }
+/* hide tab  */
+    .tab{
+        display: none;
+    }
+    .menutabcoverout{
+        display: none;
+    }
+/* header adjust  */
+    .header{
+        position: relative;
+    }
+    .nav{
+        position: absolute;
+        justify-content: center;
+    }
+    .socialmedia{
+        position: absolute;
+        right: 5%;
+    }
+    .logocontainer{
+        width: 300px;
+        height: 45.63px;
+    }
+/* menuresponsive */
+    .menuresponsive{
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        top: 30px;
+        left: 15px;
+        width: 35px;
+        height: 35px;
+        }
+/* mnu overlay */
+    .menu-overlay{
+        position: fixed;
+        background: rgb(81, 81, 81,0.3);
+        inset: 0;
+        z-index: 1;
+/* hidden overlay  */
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;       
+    }
+/* menu checkbox  */
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+/* menu drawer  */
+    .menu-drawer{
+        position: fixed;
+        background: #313131;
+        inset: 0 40% 0 0;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: 0.5s;
+    }
+    .menu-checkbox:checked ~ .menu-drawer{
+        transform: translateX(0);
+    }
+/* ulli  */
+    .menutab{
+        position: absolute;
+        top: 5%;
+        left: 20%;
+    }
+    .item.itemnonactive , .item.itemactive {
+        text-decoration: none;
+        color: white;
+    }
+/* footer  */
+    .footercontainer{
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .box2 , .box3 , .box1{
+        top: 10px;
+        flex-direction: column;
+        display: flex;
+        width: 450px;
+        height: 130px;
+        justify-content: center;
+        align-items: center;
+     }
+     .connectwithwe{
+        position: relative;
+        top: 15px;
+     }
+}
+/* Tablet */
+@media (min-width: 768px) and (max-width:991.8px){
+
+}
+
+/* Mobile */
+@media (max-width: 767.98px){
+
+}

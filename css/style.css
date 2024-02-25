@@ -1,0 +1,572 @@
+@font-face {
+    font-family: Poppins;
+    src: url(/assets/font/Poppins/Poppins-BlackItalic.ttf);
+}
+@font-face {
+    font-family: futura;
+    src: url(/assets/font/futura/FuturaCyrillicDemi.ttf);
+}
+@font-face {
+    font-family: montserrat;
+    src: url(/assets/font/montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: montserratthin;
+    src: url(/assets/font/montserrat/static/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: montserratthin1;
+    src: url(/assets/font/montserrat/static/Montserrat-LightItalic.ttf);
+}
+@font-face {
+    font-family: montserratthin3;
+    src: url(/assets/font/montserrat/static/Montserrat-Medium.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+    
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: black;
+    color: #fff
+    
+}
+.body{
+    /* min-width: 100%; */
+}
+
+/* header css here */
+.header{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    height: 100px;
+    padding: 20px 0px;
+}
+nav{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 300px;
+    margin: 0;
+}
+.logocontainer{
+    width: 650px;
+    height: 53.22px;
+}
+.custom{
+    padding: 10px;
+}
+.menutabcoverout{
+    height: 73.22px;
+}
+.menutab{
+    width: 450px;
+    height: 53.22px;
+}
+.tab{
+    width: 450px;
+    height: 73.22px;
+    padding: 10px;
+}
+.tab li a{
+    padding: 10px 20px;
+    left: 70px;;
+}
+nav ul {
+    font-family: futura;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 0px;
+
+
+}
+nav ul li a{
+    top: 4px;
+    color: #d0d0d0;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+}
+.item.itemactive{
+    color: #ffffff;
+    text-shadow: 0.3px 0 0 currentColor;
+}
+.item:hover{
+    color: #616161;
+}
+.socialmedia{
+    width: 100px;
+    height: 73.21px;
+    padding: 10px;
+    text-decoration: none;
+    align-items: center;
+}
+.socialmediabelow{
+    display: flex;
+}
+.inscover{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+.fbcover{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+.fa-brands{
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.fa-brands fa-instagram{
+    font-size: 25px;
+}
+.image img{
+    padding: 20px 170px;
+    width: 1300px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+  }
+/* slider css here */
+.sildercover{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    height: 100%;
+}
+.slider{
+    /* pointer-events: none; */
+    width: 1024px;
+    max-width: 100vw;
+    height: 773px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.slider .list{
+    position: relative;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+.slider .list img{
+    position: relative;
+    width: 1024px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+.buttoncoverfirst{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 350px;
+}
+.spaceadjust{
+    justify-content: center;
+    min-width: 1024px;
+}
+.buttons{
+    position: relative;
+    font-size: 35px;
+    margin: auto;
+    min-width: 50px;
+    left: 0.6%;
+}
+.buttons button{
+    width: 0px;
+    height: 0px;
+    border-radius: 150%;
+    background-color: white;
+    color: #9d9d9d;
+    border: none;
+    font-weight: bold;
+    font-size: larger;
+}
+.morespace{
+    width: 50%;
+}
+.buttons.left{
+    width: 26.25px;
+
+}
+.buttons.right{
+    /* width: 26.25px; */
+}
+.fa-solid:hover{
+    color: white;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
+}
+@media screen and (max-width: 768px){
+    .slider{
+        height: 400px;
+    }
+}
+#next{
+    font-family: Poppins;
+}
+#prev{
+    font-family: Poppins;
+}
+/* contact  */
+.contact-tab__box1--icons{
+    display: flex;
+}
+.contact-tab__box1--icons--items1 .fa-brands,
+.contact-tab__box1--icons--items .fa-regular,
+.contact-tab__box1--icons--items2 .fa-brands,
+.contact-tab__box1--icons--items .fa-brands{
+    font-size: 33px; 
+
+}
+.fa-solid.fa-angle-left , .fa-solid.fa-angle-right{
+    color: #919191;
+    font-size: 35px;
+    transition: 0.5s;
+}
+.fa-brands{
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 0.5s;
+}
+.fa-brands:hover{
+    font-size: 35px;
+}
+.fa-regular {
+    font-size: 25px;
+    color: white;
+    transition: 0.3s;
+}
+.fa-regular:hover{
+    font-size: 35px;
+}
+.fa-solid{
+    color: #404040;
+    font-size: 25px;
+    transition: 0.5s;
+}
+.fa-solid:hover{
+    color: white;
+}
+.image img{
+    padding: 20px 170px;
+    width: 1300px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+  }
+/* btn css here */
+.btncover{
+    position: absolute;
+}
+.btn{
+    text-decoration: none;
+    display: inline-flex;
+    background-color: #404040;
+    width: 100px;
+    height: 45px;
+    font-family: montserratTHIN3;
+    font-size: 16px;
+    border-radius: 0%;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.5s;
+}
+.btn:hover{
+    display: inline-block;
+    background: rgb(255, 255, 255);
+    color: #000;
+    height: 50px;
+}
+.dwn{
+    margin-top: 20px;
+    font-family: montserratTHIN3;
+    text-decoration: none;
+    display: inline-flex;
+    background-color: #404040;
+    width: 170px;
+    height: 50px;
+    font-size: 17px;
+    border-radius: 0%;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.5s;
+}
+.dwn:hover{
+    display: inline-flex;
+    background: white;
+    color: #000;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contact-tab{
+    height: 1100px;
+    padding-bottom: 50px;
+
+}
+.contact-tab__cover{
+    min-height: 100%;
+    padding: 60px 0px 100px;
+    display: flex;
+    justify-content: center;
+}
+.contact-tab__box2{
+    width: 200px;
+}
+.contact-tab__box1{
+    padding: 10px;
+
+}
+.contact-tab__box3{
+    padding: 10px;
+}
+.aboutme strong pr,.text{
+    font-family: montserratthin;
+    font-size: 18px;
+    letter-spacing: 0px;
+    word-spacing: 2px;
+    column-gap: 10px;
+    line-height: 28px;
+    
+}
+.text1{
+    font-family: montserratthin1;
+    font-size: 17px;
+    letter-spacing: 0px;
+    word-spacing: 2px;
+    column-gap: 10px;
+    line-height: 25px;
+}
+.text2{
+    font-family: montserratthin;
+    font-size: 18px;
+    letter-spacing: 0px;
+    word-spacing: 2px;
+}
+.text{
+    color: white;
+    font-family: montserrat;
+}
+.form{
+    margin-top: 20px;
+}
+.required{
+    color: rgb(255, 84, 84);
+}
+.contact-tab__box1--client{
+    margin-top: 10px;
+}
+.contact-tab__box1--photo--resize{
+    width: 350px;
+}
+.contact-tab__box1--connect p{
+    margin-top: 5px;
+    font-family: montserrat;
+}
+/* mail va sdt  */
+.contact-tab__box1--connect p i{
+    width: 30px;
+    height: 35px;
+    color: rgb(147, 147, 147);
+}
+.contact-tab__box1--icons{
+    text-decoration: none;
+    margin-top: 10px;
+}
+.contact-tab__box1--connect{
+    margin-top: 30px;
+}
+/* box icons */
+.contact-tab__box1--icons i{
+    width: 36px;
+    height: 36px;
+}
+.contact-tab__box1--icons--items{
+    margin-left: 8px;
+}
+.contact-tab__box1--icons--items2{
+    margin-left: 10px;
+}
+.contact-tab__box3 , form{
+    width: 600px;
+}
+form input, form textarea{
+    width: 95%;
+    border: 0;
+    outline: none;
+    background: rgb(255, 255, 255) ;
+    padding: 15px;
+    margin: 15px 0;
+    color: #5e5e5e;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.form__box1{
+    display: flex;
+}
+.form__box1--1{
+    width: 50%;
+}
+.form__box1--3{
+    width: 45%;
+}
+.form__box1--2{
+    width: 10px;
+}
+.fa-brands .fa-square-facebook .logo{
+    font-size: 100px;
+}
+.contacthover:hover{
+    color: white;
+
+}
+/* footer css here */
+.footer{
+    margin-top: auto;
+}
+.footercontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+.footercontainercase{
+}
+.left_side .ftlogo{
+    position: relative;
+    top: 4px;
+    pointer-events: none;
+    width: 300px;
+}
+.footercontainer .mid_side{
+
+}
+.footercontainer .right_side{
+ 
+}
+.box1{
+    padding: 10px;
+    height: 100px;
+    width: 450px;
+}
+.box2{
+    padding: 10px;
+    height: 100px;
+    width: 300px;
+}
+.box3{
+    padding: 10px;
+    height: 100px;
+    width: 450px;
+}
+.mail{
+    position: relative;
+    top: 8px;
+    font-size: 16px;
+    font-family: montserrat,sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+.fb{
+    position: relative;
+    top: 12px;
+    font-size: 16px;
+    font-family: montserrat,sans-serif;
+    text-decoration: none;
+    font-style: none;
+    color: #fff;
+}
+.ins{
+    position: relative;
+    top: 8px;
+    font-size: 16px;
+    font-family: montserrat,sans-serif;
+    text-decoration: none;
+    font-style: none;
+    color: #fff;
+}
+.copyright{
+    position: relative;
+    top: 10px;
+    padding-left: 14px;
+    font-size: 14px;
+    font-family: montserrat,sans-serif;
+}
+.connectwithwe{
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: futura,sans-serif;
+}
+.contactwithme{
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: futura,sans-serif;
+}
+
+  
